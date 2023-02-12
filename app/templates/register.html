@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block main %}
+
+<div class="login-container">
+	<form name="register" action="/register" method="POST">
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		<div class="alert-box">
+			{{ messages[0] }}<a href="{{ url_for('views.login') }}">Login</a>
+		</div>
+		{% endif %}
+		{% endwith %}
+		<h3>new user</h3>
+		<hr>
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username" placeholder="Enter your username" required>
+		<br>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" placeholder="Enter your password" required>
+		<label for="password">Email:</label>
+		<input type="email" name="email" id="email" placeholder="Enter your email" required>
+		<button class="btn" type="submit" value="submit">register</button>
+	</form>
+</div>
+
+
+{% endblock %}

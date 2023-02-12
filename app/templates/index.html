@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Home page{% endblock %}
+
+
+{% block main %}
+<div class="container">
+	<h1>welcome to flask login app</h1>
+</div>
+<div class="user">
+	{% if current_user.is_authenticated %}
+	<h3>Hi, {{ current_user.username }}</h3>
+	{% endif %}
+</div>
+{% if not current_user.is_authenticated %}
+<div class="login_func">
+	<h3>Let's Started</h3>
+	<p>If already Register? <a href="{{ url_for('views.login') }}">Login</a></p>
+	{% endif %}
+</div>
+
+
+{% endblock %}

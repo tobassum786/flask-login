@@ -1,0 +1,149 @@
+* {
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-bar {
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	line-height: 36px;
+	background-color: black;
+}
+
+.nav-bar .nav-item {
+	display: flex;
+	list-style: none;
+	padding-left: 10px;
+	width: 100%;
+}
+
+.nav-bar .nav-item li {
+	padding-left: 30px;
+	text-transform: uppercase;
+}
+
+.nav-bar .nav-item li a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.login-container {
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+form {
+	width: 300px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	background: lightcyan;
+	line-height: 1.2;
+	padding: 20px;
+}
+
+form h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+form label {
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: left;
+}
+
+form .btn {
+	margin-top: 16px;
+	padding: 16px 32px;
+	background-color: skyblue;
+	border-radius: 5px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	transition: 1s;
+	box-shadow: 16px 21px 49px -21px rgba(0,0,0,0.44);
+}
+
+form .btn:hover {
+	opacity: .7;
+	transition: 1s;
+}
+
+form input {
+	background: none;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid black;
+	padding: 5px;
+	font-size: 16px;
+}
+
+::placeholder {
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: lightgray;
+}
+
+
+.container {
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container h1 {
+	font-size: 64px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.login_func {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 32px;
+	background: lightgray;
+}
+
+.login_func p {
+	font-size: 24px;
+	font-weight: 400;
+
+}
+
+
+.alert-box {
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	background-color: red;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+.user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+}

@@ -1,0 +1,17 @@
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<header class="nav-bar">
+	<ul class="nav-item">
+		<li><a href="{{ url_for('views.index') }}">Home</a></li>
+		{% if not current_user.is_authenticated %}
+		<li><a href="{{ url_for('views.login') }}">Login</a></li>
+		<li><a href="{{ url_for('views.register') }}">Register</a></li>
+		{% endif %}
+		{% if current_user.is_authenticated %}
+		<li><a href="{{ url_for('views.logout') }}">Logout</a></li>
+		{% endif %}
+		<li><a href="#">About</a></li>
+	</ul>
+</header>
