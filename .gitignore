@@ -1,2 +1,4 @@
-vnv/*
+/vnv
+*.pyc
+__pycache__
 *.__pycache__
